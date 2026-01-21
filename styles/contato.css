@@ -1,0 +1,53 @@
+/* css/contato.css - Estilos para a seção Contato */
+
+#contato .contact-info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#contato .contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contato .contact-item span {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+#contato .contact-item:hover {
+    color: var(--secondary-color);
+}
+
+/* Container para centralizar os ícones */
+#contato .social-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#contato .social-links {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    gap: 25px;
+    margin-top: 15px;
+}
+
+#contato .social-links a {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#contato .social-links a:hover {
+    color: var(--secondary-color);
+    transform: translateY(-5px);
+}

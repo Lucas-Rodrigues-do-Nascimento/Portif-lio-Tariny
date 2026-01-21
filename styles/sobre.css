@@ -1,0 +1,20 @@
+/* css/sobre.css - Estilos para a seção Sobre Mim */
+
+#sobre .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#sobre .profile-text {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#sobre .profile-text p {
+    margin-bottom: 15px;
+}

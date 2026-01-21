@@ -1,0 +1,17 @@
+/* css/index.css - Arquivo principal que importa todos os outros */
+
+/* 1. Estilos base e variáveis */
+@import url('global.css');
+
+/* 2. Componentes por seção */
+@import url('header.css');
+@import url('hero.css');
+@import url('sobre.css');
+@import url('formacao.css');
+@import url('projetos.css');
+@import url('habilidades.css');
+@import url('contato.css');
+@import url('footer.css');
+
+/* 3. Responsividade */
+@import url('responsive.css');

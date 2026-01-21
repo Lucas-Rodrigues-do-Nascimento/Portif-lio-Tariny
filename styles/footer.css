@@ -1,0 +1,9 @@
+/* css/footer.css - Estilos para o rodapé (Footer) */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9rem;
+}

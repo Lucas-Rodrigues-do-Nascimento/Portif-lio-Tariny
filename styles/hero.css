@@ -1,0 +1,30 @@
+/* css/hero.css - Estilos para a seção Hero (primeira tela) */
+
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x1080/2c3e50/ffffff?text=Fundo+Arquitetura') no-repeat center center/cover;
+    color: var(--light-text-color);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px; /* Para compensar o header fixo */
+}
+
+#home .hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+#home h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}

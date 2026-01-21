@@ -1,0 +1,44 @@
+/* css/formacao.css - Estilos para a seção Formação e Especializações */
+
+#formacao .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+#formacao .card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px var(--shadow-color);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+#formacao .card:hover {
+    transform: translateY(-5px);
+}
+
+#formacao .card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#formacao .card ul {
+    list-style: none;
+}
+
+#formacao .card ul li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+#formacao .card ul li span {
+    margin-right: 10px;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}

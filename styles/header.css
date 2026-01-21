@@ -1,0 +1,50 @@
+/* css/header.css - Estilos para cabeçalho e navegação */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Ajuste de padding para o header */
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--light-text-color);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: var(--light-text-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}

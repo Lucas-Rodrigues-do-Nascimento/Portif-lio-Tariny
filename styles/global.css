@@ -1,26 +1,26 @@
 /* css/base.css - Estilos globais e variáveis CSS */
 
 :root {
-    --primary-color: #2c3e50;
-    /* Azul escuro/cinza para cabeçalhos e rodapé */
-    --secondary-color: #3498db;
-    /* Azul vibrante para acentos e links */
-    --accent-color: #2ecc71;
-    /* Verde para destaques e hover */
-    --text-color: #333;
-    /* Cor de texto principal */
-    --light-text-color: #f9f9f9;
-    /* Cor de texto claro */
-    --bg-light: #f4f4f4;
-    /* Fundo claro para seções */
-    --bg-dark: #ecf0f1;
-    /* Fundo ligeiramente mais escuro para seções alternadas */
+    --primary-color: #f8b4d9;
+    /* Rosa bebê principal */
+    --secondary-color: #f5a6c9;
+    /* Rosa um pouco mais escuro */
+    --accent-color: #ff85b3;
+    /* Rosa vibrante para destaques */
+    --text-color: #5a4a4a;
+    /* Marrom rosado para texto */
+    --light-text-color: #ffffff;
+    /* Branco para texto claro */
+    --bg-light: #fff5f9;
+    /* Fundo rosa muito claro */
+    --bg-dark: #ffeef6;
+    /* Fundo rosa claro para seções alternadas */
     --card-bg: #ffffff;
-    /* Fundo para cards de projetos/habilidades */
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    /* Cor da sombra */
-    --border-radius: 8px;
-    /* Raio da borda para elementos arredondados */
+    /* Fundo branco para cards */
+    --shadow-color: rgba(248, 180, 217, 0.2);
+    /* Sombra rosa suave */
+    --border-radius: 12px;
+    /* Bordas mais arredondadas */
 }
 
 /* Reset básico e estilos de corpo */
@@ -36,7 +36,6 @@ body {
     color: var(--text-color);
     background-color: var(--bg-light);
     scroll-behavior: smooth;
-    /* Rolagem suave para âncoras */
 }
 
 /* Estilos para contêiner principal */
@@ -50,7 +49,8 @@ body {
 .section-title {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color: var(--accent-color);
+    /* Rosa vibrante para títulos */
     margin-bottom: 40px;
     position: relative;
     display: inline-block;
@@ -66,6 +66,7 @@ body {
     width: 60px;
     height: 4px;
     background-color: var(--secondary-color);
+    /* Rosa para a linha */
     border-radius: 2px;
 }
 
@@ -83,16 +84,20 @@ section:nth-of-type(even) {
 /* Estilos para botões */
 .btn {
     display: inline-block;
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
+    /* Rosa vibrante */
     color: var(--light-text-color);
     padding: 12px 25px;
     text-decoration: none;
     border-radius: var(--border-radius);
     font-size: 1.1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 133, 179, 0.3);
 }
 
 .btn:hover {
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
+    /* Rosa mais suave no hover */
     transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 133, 179, 0.4);
 }

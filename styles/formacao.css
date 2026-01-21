@@ -13,15 +13,18 @@
     border-radius: var(--border-radius);
     box-shadow: 0 4px 15px var(--shadow-color);
     text-align: left;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(248, 180, 217, 0.2);
 }
 
 #formacao .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(248, 180, 217, 0.3);
 }
 
 #formacao .card h3 {
-    color: var(--secondary-color);
+    color: var(--accent-color);
+    /* Rosa vibrante para títulos dos cards */
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
@@ -40,5 +43,6 @@
 #formacao .card ul li span {
     margin-right: 10px;
     color: var(--accent-color);
+    /* Rosa para os ícones */
     font-size: 1.2rem;
 }

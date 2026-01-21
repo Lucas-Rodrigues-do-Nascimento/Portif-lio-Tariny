@@ -11,22 +11,27 @@
 #habilidades .skill-item {
     background-color: var(--card-bg);
     padding: 15px 25px;
-    border-radius: 50px; /* Formato de pílula */
+    border-radius: 50px;
     box-shadow: 0 2px 8px var(--shadow-color);
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--primary-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: var(--accent-color);
+    /* Rosa para o texto das habilidades */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     display: flex;
     align-items: center;
+    border: 1px solid rgba(248, 180, 217, 0.3);
 }
 
 #habilidades .skill-item span {
     margin-right: 8px;
     font-size: 1.3rem;
+    color: var(--secondary-color);
 }
 
 #habilidades .skill-item:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    /* Rosa bebê no hover */
     color: var(--light-text-color);
+    transform: translateY(-3px);
 }

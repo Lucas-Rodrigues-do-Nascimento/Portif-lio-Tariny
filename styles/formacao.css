@@ -5,16 +5,19 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 40px;
+    align-items: stretch;
 }
 
 #formacao .card {
     background-color: var(--card-bg);
-    padding: 30px;
+    padding: 32px 28px;
     border-radius: var(--border-radius);
     box-shadow: 0 4px 15px var(--shadow-color);
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(248, 180, 217, 0.2);
+    display: flex;
+    flex-direction: column;
 }
 
 #formacao .card:hover {
@@ -24,25 +27,80 @@
 
 #formacao .card h3 {
     color: var(--accent-color);
-    /* Rosa vibrante para títulos dos cards */
-    margin-bottom: 15px;
-    font-size: 1.5rem;
+    margin-bottom: 24px;
+    font-size: 1.35rem;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
 #formacao .card ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #formacao .card ul li {
-    margin-bottom: 10px;
-    font-size: 1.05rem;
     display: flex;
     align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 24px;
 }
 
-#formacao .card ul li span {
-    margin-right: 10px;
+#formacao .card ul li:last-child {
+    margin-bottom: 0;
+}
+
+#formacao .card ul li .icon {
     color: var(--accent-color);
-    /* Rosa para os ícones */
-    font-size: 1.2rem;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: flex-start;
+    margin-top: 2px;
+}
+
+#formacao .card ul li .icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Formação e Pós-Graduações - estrutura de texto */
+#formacao .formacao-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+#formacao .formacao-curso {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--dark-text-color);
+    line-height: 1.4;
+}
+
+#formacao .formacao-instituicao {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    opacity: 0.95;
+}
+
+#formacao .formacao-local {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.85;
+}
+
+/* Cursos - lista compacta e simétrica */
+#formacao .cursos-lista li {
+    margin-bottom: 14px;
+}
+
+#formacao .cursos-lista li:last-child {
+    margin-bottom: 0;
+}
+
+#formacao .cursos-lista li {
+    font-size: 1.05rem;
+    color: var(--dark-text-color);
+    align-items: center;
 }

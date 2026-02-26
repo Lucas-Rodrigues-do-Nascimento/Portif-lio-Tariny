@@ -17,14 +17,41 @@
     transition: color 0.3s ease;
 }
 
-#contato .contact-item span {
+#contato .contact-item .icon {
     margin-right: 10px;
-    font-size: 1.5rem;
     color: var(--accent-color);
-    /* Rosa para os ícones de contato */
 }
 
-#contato .contact-item:hover {
+#contato .contact-item .icon-whatsapp {
+    color: #25D366;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+#contato .contact-item .icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#contato .contact-location {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#contato .social-links a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--accent-color);
+}
+
+#contato .social-links a svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+#contato a.contact-item:hover {
     color: var(--accent-color);
 }
 
@@ -42,9 +69,6 @@
 }
 
 #contato .social-links a {
-    font-size: 2.5rem;
-    color: var(--accent-color);
-    /* Rosa para os ícones sociais */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 

@@ -1,26 +1,34 @@
 /* css/base.css - Estilos globais e variáveis CSS */
 
 :root {
-    --primary-color: #f8b4d9;
-    /* Rosa bebê principal */
-    --secondary-color: #f5a6c9;
-    /* Rosa um pouco mais escuro */
-    --accent-color: #ff85b3;
-    /* Rosa vibrante para destaques */
-    --text-color: #5a4a4a;
-    /* Marrom rosado para texto */
+    --primary-color: #efd9d5;
+    /* Rosa bebê suave - cor principal */
+    --secondary-color: #f8f0ee;
+    /* Rosa muito claro para fundos */
+    --accent-color: #d4a6a1;
+    /* Rosa terroso para destaques */
+    --text-color: #7d6152;
+    /* Marrom rosado com melhor contraste */
     --light-text-color: #ffffff;
     /* Branco para texto claro */
-    --bg-light: #fff5f9;
-    /* Fundo rosa muito claro */
-    --bg-dark: #ffeef6;
-    /* Fundo rosa claro para seções alternadas */
+    --dark-text-color: #5a4538;
+    /* Marrom escuro para títulos e hierarquia */
+    --bg-light: #ffffff;
+    /* Fundo branco */
+    --bg-dark: #f9f5f4;
+    /* Fundo bege rosado muito claro */
     --card-bg: #ffffff;
     /* Fundo branco para cards */
-    --shadow-color: rgba(248, 180, 217, 0.2);
+    --shadow-color: rgba(239, 217, 213, 0.3);
     /* Sombra rosa suave */
     --border-radius: 12px;
     /* Bordas mais arredondadas */
+    --link-color: #b88b87;
+    /* Rosa terroso para links */
+    --hover-link-color: #9a6d68;
+    /* Rosa terroso mais escuro no hover */
+    --border-color: #efd9d5;
+    /* Cor para bordas sutis */
 }
 
 /* Reset básico e estilos de corpo */
@@ -31,7 +39,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-light);
@@ -47,10 +55,10 @@ body {
 
 /* Estilos para títulos de seção */
 .section-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 2.5rem;
-    color: var(--accent-color);
-    /* Rosa vibrante para títulos */
+    color: var(--dark-text-color);
+    /* Marrom escuro para títulos */
     margin-bottom: 40px;
     position: relative;
     display: inline-block;
@@ -65,8 +73,8 @@ body {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background-color: var(--secondary-color);
-    /* Rosa para a linha */
+    background-color: var(--primary-color);
+    /* Rosa bebê para a linha */
     border-radius: 2px;
 }
 
@@ -74,6 +82,11 @@ body {
 section {
     padding: 80px 0;
     text-align: center;
+    position: relative;
+}
+
+section + section {
+    border-top: 1px solid var(--border-color);
 }
 
 section:nth-of-type(even) {
@@ -84,20 +97,37 @@ section:nth-of-type(even) {
 /* Estilos para botões */
 .btn {
     display: inline-block;
-    background-color: var(--accent-color);
-    /* Rosa vibrante */
-    color: var(--light-text-color);
+    background-color: var(--primary-color);
+    /* Rosa bebê */
+    color: var(--dark-text-color);
+    /* Texto escuro para contraste */
     padding: 12px 25px;
     text-decoration: none;
     border-radius: var(--border-radius);
     font-size: 1.1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 133, 179, 0.3);
+    box-shadow: 0 4px 15px var(--shadow-color);
+    border: 1px solid rgba(239, 217, 213, 0.5);
 }
 
 .btn:hover {
-    background-color: var(--secondary-color);
-    /* Rosa mais suave no hover */
+    background-color: var(--accent-color);
+    /* Rosa terroso no hover */
+    color: var(--light-text-color);
+    /* Texto branco no hover */
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 133, 179, 0.4);
+    box-shadow: 0 6px 20px rgba(212, 166, 161, 0.4);
+}
+
+/* Estilos para links */
+a {
+    color: var(--link-color);
+    /* Cor padrão para links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-link-color);
+    /* Cor no hover */
 }

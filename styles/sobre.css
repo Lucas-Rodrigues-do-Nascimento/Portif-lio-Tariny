@@ -2,14 +2,35 @@
 
 #sobre .content-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 30px;
-    max-width: 900px;
+    gap: 50px;
+    max-width: 1000px;
     margin: 0 auto;
+    text-align: left;
+}
+
+#sobre .profile-image {
+    flex-shrink: 0;
+    width: 280px;
+    height: 280px;
+    min-width: 280px;
+    min-height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+#sobre .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
 }
 
 #sobre .profile-text {
+    flex: 1;
     text-align: left;
     font-size: 1.1rem;
     line-height: 1.8;

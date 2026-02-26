@@ -6,8 +6,65 @@
         font-size: 1.5rem;
     }
 
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        max-width: 85vw;
+        height: 100vh;
+        background-color: var(--primary-color);
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        padding-top: 80px;
+        z-index: 999;
+    }
+
+    nav.is-open {
+        right: 0;
+    }
+
+    body.menu-open::after {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 998;
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
     nav ul {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 20px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        border-bottom: 1px solid rgba(159, 120, 102, 0.2);
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 16px 0;
+        font-size: 1.2rem;
+    }
+
+    #home::after {
+        width: 120px;
+        height: 120px;
+        bottom: 20%;
+        right: 5%;
     }
 
     #home h1 {
@@ -26,14 +83,20 @@
         flex-direction: column;
     }
 
+    #sobre .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
     #formacao .grid-container,
     #projetos .grid-container {
         grid-template-columns: 1fr;
     }
 
     #habilidades .skills-list {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #contato .social-links a {
@@ -44,12 +107,19 @@
 /* Para telas menores que 480px (smartphones) */
 @media (max-width: 480px) {
     header .container {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
     }
 
     .logo {
-        margin-bottom: 10px;
+        margin-bottom: 0;
+    }
+
+    #home::after {
+        width: 80px;
+        height: 80px;
+        opacity: 0.35;
     }
 
     #home h1 {
@@ -85,7 +155,8 @@
         font-size: 1rem;
     }
 
-    #contato .contact-item span {
-        font-size: 1.3rem;
+    #contato .contact-item .icon svg {
+        width: 1.3rem;
+        height: 1.3rem;
     }
 }

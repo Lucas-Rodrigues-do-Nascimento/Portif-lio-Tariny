@@ -84,10 +84,18 @@
     opacity: 0.95;
 }
 
-#formacao .formacao-local {
+#formacao .formacao-local,
+#formacao .formacao-detalhes {
     font-size: 0.9rem;
     color: var(--text-color);
-    opacity: 0.85;
+    opacity: 0.9;
+}
+
+#formacao .formacao-periodo {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-top: 4px;
 }
 
 /* Cursos - lista compacta e simétrica */

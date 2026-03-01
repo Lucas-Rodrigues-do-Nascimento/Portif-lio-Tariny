@@ -74,17 +74,19 @@
   margin-bottom: 48px;
 }
 
-/* Wrapper das galerias - lado a lado */
+/* Wrapper das galerias - lado a lado, centralizado */
 .galerias-wrapper {
   display: flex;
   gap: 32px;
   margin: 48px 0;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .galerias-wrapper .projeto-imagens {
   flex: 1;
   min-width: 280px;
+  max-width: 680px;
   margin: 0;
 }
 
@@ -99,30 +101,52 @@
   margin-bottom: 20px;
 }
 
-/* Galeria de fotos - 1 linha só, sem quebras */
+/* Cards das galerias - sombreamento idêntico em todas (referência: Detalhamento Lazer) */
+.projeto-detalhe .projeto-secao .projeto-imagens,
+.projeto-detalhe .galerias-wrapper .projeto-imagens {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 20px rgba(212, 166, 161, 0.25), 0 2px 10px rgba(0, 0, 0, 0.06);
+  padding: 28px 24px;
+  margin: 0 0 32px 0;
+}
+
+/* Galeria de fotos - centralizada, imagens simétricas */
 .galeria {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   margin-top: 20px;
-  overflow-x: auto;
-  padding-bottom: 4px;
+  width: 100%;
 }
 
 .galeria-img {
-  flex: 0 0 auto;
   width: 160px;
-  height: 120px;
-  min-width: 100px;
+  height: 160px;
   object-fit: cover;
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
 }
 
 .galeria-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+/* Centraliza conteúdo das galerias */
+.projeto-detalhe .projeto-imagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projeto-detalhe .projeto-imagens .imagens-legenda {
+  text-align: center;
+  width: 100%;
 }
 
 /* Lightbox - tela cheia */
@@ -284,6 +308,12 @@
   opacity: 0.8;
 }
 
+/* Fundo uniforme - evita sombreamento diferente em seções pares (Cozinha, Hobby Box) */
+.pagina-projeto .projeto-secao,
+.pagina-projeto .projeto-secao:nth-of-type(even) {
+  background-color: transparent;
+}
+
 .projeto-secao {
   margin-top: 48px;
 }
@@ -293,6 +323,7 @@
   font-size: 2.5rem;
   color: var(--dark-text-color);
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .projeto-secao h3 {

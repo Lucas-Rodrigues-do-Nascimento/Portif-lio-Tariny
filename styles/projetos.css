@@ -28,12 +28,12 @@
     display: block;
 }
 
-/* Capa San Sebastian: imagem completa (especificidade maior que .project-card img) */
-#projetos .project-card-link:has(.project-cover-san-sebastian-wrapper) {
+/* Capa Empreendimento Residencial Vertical — As Built: imagem completa (especificidade maior que .project-card img) */
+#projetos .project-card-link:has(.project-cover-as-built-wrapper) {
     overflow: visible;
 }
 
-#projetos .project-card .project-cover-san-sebastian-wrapper {
+#projetos .project-card .project-cover-as-built-wrapper {
     width: 100%;
     min-height: 250px;
     padding: 0;
@@ -44,7 +44,7 @@
     background-color: #fff;
 }
 
-#projetos .project-card .project-cover-san-sebastian-wrapper img.project-cover-san-sebastian {
+#projetos .project-card .project-cover-as-built-wrapper img.project-cover-as-built {
     width: auto !important;
     height: auto !important;
     max-width: 100%;

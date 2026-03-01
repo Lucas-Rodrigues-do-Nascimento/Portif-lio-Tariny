@@ -28,7 +28,7 @@
 #formacao .card h3 {
     color: var(--accent-color);
     margin-bottom: 24px;
-    font-size: 1.35rem;
+    font-size: 1.7rem;
     font-weight: 600;
     text-transform: capitalize;
 }
@@ -59,8 +59,8 @@
 }
 
 #formacao .card ul li .icon svg {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 /* Formação e Pós-Graduações - estrutura de texto */
@@ -72,27 +72,27 @@
 }
 
 #formacao .formacao-curso {
-    font-size: 1.05rem;
+    font-size: 1.35rem;
     font-weight: 600;
     color: var(--dark-text-color);
     line-height: 1.4;
 }
 
 #formacao .formacao-instituicao {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     color: var(--text-color);
     opacity: 0.95;
 }
 
 #formacao .formacao-local,
 #formacao .formacao-detalhes {
-    font-size: 0.9rem;
+    font-size: 1.15rem;
     color: var(--text-color);
     opacity: 0.9;
 }
 
 #formacao .formacao-periodo {
-    font-size: 0.9rem;
+    font-size: 1.15rem;
     color: var(--accent-color);
     font-weight: 600;
     margin-top: 4px;
@@ -108,7 +108,7 @@
 }
 
 #formacao .cursos-lista li {
-    font-size: 1.05rem;
+    font-size: 1.35rem;
     color: var(--dark-text-color);
     align-items: center;
 }

@@ -56,7 +56,7 @@ body {
 /* Estilos para títulos de seção */
 .section-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: var(--dark-text-color);
     /* Marrom escuro para títulos */
     margin-bottom: 40px;
@@ -101,10 +101,10 @@ section:nth-of-type(even) {
     /* Rosa bebê */
     color: var(--dark-text-color);
     /* Texto escuro para contraste */
-    padding: 12px 25px;
+    padding: 14px 28px;
     text-decoration: none;
     border-radius: var(--border-radius);
-    font-size: 1.1rem;
+    font-size: 1.35rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 15px var(--shadow-color);
     border: 1px solid rgba(239, 217, 213, 0.5);

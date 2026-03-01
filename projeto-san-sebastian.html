@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AS BUILT - Edifício San Sebastian | Tariny Queiroz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900&family=Poppins:ital,wght@0,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/projeto-detalhe.css" />
+  </head>
+  <body class="pagina-projeto">
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">Tariny Queiroz</a>
+        <button id="menu-toggle" type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+        </button>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#projetos">Projetos</a></li>
+            <li><a href="index.html#atuacao">Atuação Técnica</a></li>
+            <li><a href="index.html#habilidades">Habilidades Técnicas</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="projeto-detalhe">
+      <article class="container">
+        <!-- Página 1 -->
+        <header class="projeto-header">
+          <h1>AS BUILT - Edifício San Sebastian</h1>
+          <p class="projeto-subtitulo">Acompanhamento de obra e compatibilização pós execução</p>
+          <p class="projeto-resumo">Residencial multifamiliar vertical com 2 unidades por andar (09 aptos + área de lazer)</p>
+          <p class="projeto-local">Balneário Piçarras - 2025/2026</p>
+        </header>
+
+        <p class="projeto-descricao">
+          Levantamento técnico e atualização As Built realizado para adequação do projeto arquitetônico à execução final da obra, garantindo conformidade documental para aprovação junto à prefeitura e registros técnicos.
+        </p>
+
+        <!-- Situação Encontrada e Adequações - texto antes das galerias -->
+        <section class="projeto-secao">
+          <h2>Situação Encontrada e Adequações</h2>
+          <p>
+            Durante o desenvolvimento do As Built, foram identificadas divergências entre o projeto aprovado na prefeitura e a edificação executada.
+          </p>
+          <p>
+            O projeto aprovado respeitava o gabarito máximo permitido (térreo + cinco pavimentos), porém o empreendimento havia sido comercializado com área de lazer no rooftop, configurando um pavimento adicional não permitido pela legislação. Como solução, um apartamento do primeiro pavimento foi convertido em área de lazer coletiva, mantendo o conceito do empreendimento sem ultrapassar o limite construtivo.
+          </p>
+
+          <h3>Principais adequações realizadas:</h3>
+          <ul>
+            <li>Ampliação da laje do 1º pavimento e criação de área de lazer com salão de festas com área de TV, academia, brinquedoteca e área externa com deck para jacuzzi;</li>
+            <li>Fechamento das sacadas com sistema Reiki, substituindo o guarda-corpo e ampliando a área útil dos apartamentos, além de revisão estética da fachada com uso de brises;</li>
+            <li>Adequações no térreo com implantação de rampa acessível para o acesso de pedestres, criação do pórtico de entrada para melhor destaque ao prédio, recuo com área vegetada frontal da fachada e reorganização do acesso de serviços com acesso externo independente (lixeira e GLP);</li>
+            <li>Criação de área de apoio com chuveiro no pavimento térreo.</li>
+          </ul>
+        </section>
+
+        <!-- Galerias lado a lado -->
+        <div class="galerias-wrapper">
+          <div class="projeto-imagens">
+            <p class="imagens-legenda">Projeto inicial da construtora</p>
+            <div class="galeria" data-galeria="antes">
+              <img src="assets/images/AS%20BUILT%20SS/ANTES/Antes 1.jpeg" alt="Projeto inicial - As Built San Sebastian 1" class="galeria-img" loading="lazy">
+              <img src="assets/images/AS%20BUILT%20SS/ANTES/Antes 2.jpeg" alt="Projeto inicial - As Built San Sebastian 2" class="galeria-img" loading="lazy">
+              <img src="assets/images/AS%20BUILT%20SS/ANTES/Antes 3.jpeg" alt="Projeto inicial - As Built San Sebastian 3" class="galeria-img" loading="lazy">
+              <img src="assets/images/AS%20BUILT%20SS/ANTES/Antes 4.jpeg" alt="Projeto inicial - As Built San Sebastian 4" class="galeria-img" loading="lazy">
+            </div>
+          </div>
+          <div class="projeto-imagens">
+            <p class="imagens-legenda">Projeto finalizado</p>
+            <div class="galeria" data-galeria="depois">
+              <img src="assets/images/AS%20BUILT%20SS/DEPOIS/Depois 1.jpeg" alt="Projeto finalizado - As Built San Sebastian 1" class="galeria-img" loading="lazy">
+              <img src="assets/images/AS%20BUILT%20SS/DEPOIS/Depois 2.jpeg" alt="Projeto finalizado - As Built San Sebastian 2" class="galeria-img" loading="lazy">
+              <img src="assets/images/AS%20BUILT%20SS/DEPOIS/Depois 3.jpeg" alt="Projeto finalizado - As Built San Sebastian 3" class="galeria-img" loading="lazy">
+              <img src="assets/images/AS%20BUILT%20SS/DEPOIS/Depois 4.jpeg" alt="Projeto finalizado - As Built San Sebastian 4" class="galeria-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <!-- Lightbox para tela cheia -->
+        <div id="lightbox" class="lightbox" aria-hidden="true">
+          <button type="button" class="lightbox-fechar" aria-label="Fechar">×</button>
+          <button type="button" class="lightbox-prev" aria-label="Imagem anterior">‹</button>
+          <div class="lightbox-img-wrapper">
+            <img src="" alt="" class="lightbox-img" id="lightbox-img">
+          </div>
+          <div class="lightbox-zoom">
+            <button type="button" class="lightbox-zoom-in" aria-label="Aumentar zoom">+</button>
+            <button type="button" class="lightbox-zoom-out" aria-label="Diminuir zoom">−</button>
+          </div>
+          <button type="button" class="lightbox-next" aria-label="Próxima imagem">›</button>
+        </div>
+
+        <p class="projeto-voltar">
+          <a href="index.html#projetos" class="btn">Voltar aos Projetos</a>
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <nav class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="index.html#contato">Contato</a>
+          </nav>
+          <p>&copy; 2024 Tariny Queiroz. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/lightbox.js"></script>
+  </body>
+</html>

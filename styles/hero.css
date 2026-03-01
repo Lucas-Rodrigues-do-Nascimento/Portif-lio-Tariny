@@ -1,4 +1,4 @@
-/* css/hero.css - Versão minimalista com elemento visual */
+/* css/hero.css - Hero com logo e layout simétrico */
 
 #home {
     background: #ffffff;
@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 80px;
+    padding: 100px 24px 80px;
     position: relative;
     overflow: hidden;
 }
@@ -19,42 +19,72 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 60%;
-    background: linear-gradient(135deg, var(--primary-color) 0%, #ffffff 100%);
-    z-index: 0;
-}
-
-#home::after {
-    content: '';
-    position: absolute;
-    bottom: 15%;
-    right: 10%;
-    width: 200px;
-    height: 200px;
-    border: 2px solid var(--primary-color);
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    opacity: 0.5;
+    bottom: 0;
+    background: #ffffff;
     z-index: 0;
 }
 
 #home .hero-content {
-    max-width: 800px;
-    padding: 40px;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
 }
 
-#home h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3.5rem;
+/* Bloco da logo - monograma + nome + subtítulo */
+#home .hero-logo-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+#home .hero-logo-img {
+    width: 128px;
+    height: auto;
     margin-bottom: 20px;
-    font-weight: 700;
-    color: var(--dark-text-color);
 }
 
-#home p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-    font-weight: 300;
+#home .logo-nome {
+    font-family: 'Inter', 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: var(--dark-text-color);
+    text-transform: uppercase;
+}
+
+#home .logo-subtitulo {
+    font-family: 'Inter', 'Poppins', sans-serif;
+    font-size: 1.12rem;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    color: #c7a69a;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* Linhas de texto - espaçamento uniforme (160% para monitores grandes) */
+#home .hero-tagline {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--dark-text-color);
+    margin: 0 0 10px 0;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+#home .hero-descricao {
+    font-size: 1.52rem;
+    font-weight: 400;
     color: var(--text-color);
+    margin: 0 0 28px 0;
+    line-height: 1.6;
+    white-space: nowrap;
 }

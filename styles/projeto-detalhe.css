@@ -1,0 +1,340 @@
+/* Estilos para páginas de detalhe de projetos - 160% tipografia */
+
+/* Header centralizado e simétrico na página de projeto */
+.pagina-projeto header .container {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.pagina-projeto header nav ul {
+  justify-content: center;
+}
+
+.pagina-projeto header nav ul li {
+  margin-left: 20px;
+}
+
+.pagina-projeto header nav ul li:first-child {
+  margin-left: 0;
+}
+
+@media (max-width: 768px) {
+  .pagina-projeto header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.projeto-detalhe {
+  padding: 120px 0 80px;
+  min-height: 100vh;
+}
+
+.projeto-detalhe .container {
+  max-width: 1400px;
+}
+
+.projeto-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projeto-detalhe h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  color: var(--dark-text-color);
+  margin-bottom: 16px;
+}
+
+.projeto-subtitulo {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+}
+
+.projeto-resumo {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.projeto-local {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+.projeto-descricao {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-bottom: 48px;
+}
+
+/* Wrapper das galerias - lado a lado */
+.galerias-wrapper {
+  display: flex;
+  gap: 32px;
+  margin: 48px 0;
+  flex-wrap: wrap;
+}
+
+.galerias-wrapper .projeto-imagens {
+  flex: 1;
+  min-width: 280px;
+  margin: 0;
+}
+
+.projeto-imagens {
+  margin: 48px 0;
+}
+
+.imagens-legenda {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+/* Galeria de fotos - 1 linha só, sem quebras */
+.galeria {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  margin-top: 20px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.galeria-img {
+  flex: 0 0 auto;
+  width: 160px;
+  height: 120px;
+  min-width: 100px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Lightbox - tela cheia */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox.ativo {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-img-wrapper {
+  width: 90vw;
+  height: 90vh;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin: auto;
+}
+
+.lightbox-img.zoom-ativo {
+  flex-shrink: 0;
+  min-width: min-content;
+  min-height: min-content;
+  margin: auto;
+}
+
+/* Botões de zoom - fora da área de scroll */
+.lightbox-zoom {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.lightbox-zoom-in,
+.lightbox-zoom-out {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.lightbox-zoom-in:hover,
+.lightbox-zoom-out:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.lightbox-fechar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.lightbox-fechar:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Setas prev/next do lightbox */
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  padding: 0;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.lightbox-prev {
+  left: 24px;
+}
+
+.lightbox-next {
+  right: 24px;
+}
+
+.lightbox-prev.oculto,
+.lightbox-next.oculto {
+  display: none;
+}
+
+.imagens-placeholder {
+  min-height: 200px;
+  padding: 40px;
+  background: var(--bg-dark);
+  border: 2px dashed var(--border-color);
+  border-radius: var(--border-radius);
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.projeto-secao {
+  margin-top: 48px;
+}
+
+.projeto-secao h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  color: var(--dark-text-color);
+  margin-bottom: 24px;
+}
+
+.projeto-secao h3 {
+  font-size: 1.9rem;
+  color: var(--accent-color);
+  margin: 32px 0 20px;
+}
+
+.projeto-secao p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.projeto-secao ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projeto-secao li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+.projeto-secao li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.projeto-voltar {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.projeto-voltar .btn {
+  font-size: 1.35rem;
+}

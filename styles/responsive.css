@@ -60,23 +60,30 @@
         font-size: 1.2rem;
     }
 
-    #home::after {
-        width: 120px;
-        height: 120px;
-        bottom: 20%;
-        right: 5%;
+    #home .hero-logo-img {
+        width: 100px;
     }
 
-    #home h1 {
-        font-size: 2.5rem;
+    #home .logo-nome {
+        font-size: 1.9rem;
     }
 
-    #home p {
+    #home .logo-subtitulo {
+        font-size: 0.9rem;
+    }
+
+    #home .hero-tagline {
+        font-size: 1.25rem;
+        white-space: normal;
+    }
+
+    #home .hero-descricao {
         font-size: 1.2rem;
+        white-space: normal;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     #sobre .content-wrapper {
@@ -91,6 +98,10 @@
     #formacao .grid-container,
     #projetos .grid-container {
         grid-template-columns: 1fr;
+    }
+
+    #atuacao .atuacao-bloco {
+        padding: 24px 20px;
     }
 
     #habilidades .skills-list {
@@ -116,18 +127,28 @@
         margin-bottom: 0;
     }
 
-    #home::after {
-        width: 80px;
-        height: 80px;
-        opacity: 0.35;
+    #home .hero-logo-img {
+        width: 85px;
     }
 
-    #home h1 {
-        font-size: 2rem;
+    #home .logo-nome {
+        font-size: 1.5rem;
+        letter-spacing: 0.08em;
     }
 
-    #home p {
+    #home .logo-subtitulo {
+        font-size: 0.85rem;
+        letter-spacing: 0.2em;
+    }
+
+    #home .hero-tagline {
         font-size: 1rem;
+        white-space: normal;
+    }
+
+    #home .hero-descricao {
+        font-size: 0.95rem;
+        white-space: normal;
     }
 
     .btn {
@@ -136,7 +157,7 @@
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     section {
@@ -148,11 +169,11 @@
     }
 
     #projetos .project-card h3 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     #contato .contact-item {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     #contato .contact-item .icon svg {

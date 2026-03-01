@@ -23,7 +23,7 @@ header .container {
 
 .logo {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: var(--dark-text-color);
     /* Texto escuro para a logo */
@@ -44,7 +44,7 @@ nav ul li a {
     /* Texto escuro para links */
     text-decoration: none;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.35rem;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 

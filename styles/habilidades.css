@@ -13,7 +13,7 @@
     padding: 15px 25px;
     border-radius: 50px;
     box-shadow: 0 2px 8px var(--shadow-color);
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--accent-color);
     /* Rosa para o texto das habilidades */
@@ -32,8 +32,8 @@
 }
 
 #habilidades .skill-item .icon svg {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.6rem;
+    height: 1.6rem;
 }
 
 #habilidades .skill-item:hover {

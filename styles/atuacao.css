@@ -9,10 +9,14 @@
     text-align: center;
 }
 
+#atuacao .atuacao-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
 #atuacao .atuacao-bloco {
-    max-width: 700px;
-    margin: 0 auto 36px;
-    padding: 28px 32px;
+    padding: 24px 28px;
     background-color: var(--card-bg);
     border-radius: var(--border-radius);
     box-shadow: 0 4px 15px var(--shadow-color);
@@ -20,9 +24,6 @@
     text-align: left;
 }
 
-#atuacao .atuacao-bloco:last-child {
-    margin-bottom: 0;
-}
 
 #atuacao .atuacao-subtitulo {
     font-family: 'Inter', 'Poppins', sans-serif;

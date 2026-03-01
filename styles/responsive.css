@@ -100,6 +100,10 @@
         grid-template-columns: 1fr;
     }
 
+    #atuacao .atuacao-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     #atuacao .atuacao-bloco {
         padding: 24px 20px;
     }
@@ -170,6 +174,10 @@
 
     #projetos .project-card h3 {
         font-size: 1.6rem;
+    }
+
+    #atuacao .atuacao-grid {
+        grid-template-columns: 1fr;
     }
 
     #contato .contact-item {

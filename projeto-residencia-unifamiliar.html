@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Residência Unifamiliar — Projeto Legal (Prefeitura) | Tariny Queiroz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900&family=Poppins:ital,wght@0,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/projeto-detalhe.css" />
+  </head>
+  <body class="pagina-projeto">
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">Tariny Queiroz</a>
+        <button id="menu-toggle" type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+        </button>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#projetos">Projetos</a></li>
+            <li><a href="index.html#atuacao">Atuação Técnica</a></li>
+            <li><a href="index.html#habilidades">Habilidades Técnicas</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="projeto-detalhe">
+      <article class="container">
+        <header class="projeto-header">
+          <h1>Residência Unifamiliar — Projeto Legal (Prefeitura)</h1>
+          <div class="projeto-header-textos">
+            <p class="projeto-descricao projeto-descricao-linha">
+              Desenvolvimento de projeto arquitetônico para aprovação municipal.
+            </p>
+            <p class="projeto-descricao projeto-descricao-linha">
+              Residência térrea projetada considerando o reaproveitamento de esquadrias em madeira existentes, adequando o layout arquitetônico às dimensões e características dos elementos fornecidos pelo cliente.
+            </p>
+          </div>
+        </header>
+
+        <section class="projeto-secao">
+          <h2>Diretrizes Projetuais</h2>
+          <p>Projeto legal desenvolvido para aprovação junto à prefeitura, considerando condicionantes do terreno, legislação urbanística e demandas específicas do cliente.</p>
+          <p>A proposta arquitetônica foi elaborada a partir do reaproveitamento de portas e janelas em madeira já existentes, exigindo adequação dimensional dos ambientes e estudo cuidadoso das aberturas, garantindo funcionalidade, ventilação natural e integração estética da residência.</p>
+        </section>
+
+        <section class="projeto-secao">
+          <h2>Documentação do Projeto</h2>
+          <div class="projeto-imagens">
+            <div class="galeria" data-galeria="residencia-unifamiliar">
+              <img src="assets/images/Resid%C3%AAncia%20Unifamiliar/PROJETO%20PREFA%20BLU_ARQUITETURA_1.jpg" alt="Residência Unifamiliar - PREFA BLU 1" class="galeria-img" loading="lazy">
+              <img src="assets/images/Resid%C3%AAncia%20Unifamiliar/PROJETO%20PREFA%20BLU_ARQUITETURA_2.jpg" alt="Residência Unifamiliar - PREFA BLU 2" class="galeria-img" loading="lazy">
+              <img src="assets/images/Resid%C3%AAncia%20Unifamiliar/PROJETO%20PREFA%20BLU_ARQUITETURA_3.jpg" alt="Residência Unifamiliar - PREFA BLU 3" class="galeria-img" loading="lazy">
+              <img src="assets/images/Resid%C3%AAncia%20Unifamiliar/PROJETO%20PREFA%20BLU_ARQUITETURA_4.jpg" alt="Residência Unifamiliar - PREFA BLU 4" class="galeria-img" loading="lazy">
+            </div>
+          </div>
+        </section>
+
+        <div id="lightbox" class="lightbox" aria-hidden="true">
+          <button type="button" class="lightbox-fechar" aria-label="Fechar">×</button>
+          <button type="button" class="lightbox-prev" aria-label="Imagem anterior">‹</button>
+          <div class="lightbox-img-wrapper">
+            <img src="" alt="" class="lightbox-img" id="lightbox-img">
+          </div>
+          <div class="lightbox-zoom">
+            <button type="button" class="lightbox-zoom-in" aria-label="Aumentar zoom">+</button>
+            <button type="button" class="lightbox-zoom-out" aria-label="Diminuir zoom">−</button>
+          </div>
+          <button type="button" class="lightbox-next" aria-label="Próxima imagem">›</button>
+        </div>
+
+        <p class="projeto-voltar">
+          <a href="index.html#projetos" class="btn">Voltar aos Projetos</a>
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <nav class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="index.html#contato">Contato</a>
+          </nav>
+          <p>&copy; 2024 Tariny Queiroz. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/lightbox.js"></script>
+  </body>
+</html>

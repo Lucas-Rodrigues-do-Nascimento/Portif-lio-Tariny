@@ -1,5 +1,10 @@
 /* Estilos para páginas de detalhe de projetos - 160% tipografia */
 
+/* Oculta o menu de navegação do site na página de projeto - só mostra o conteúdo do projeto */
+.pagina-projeto > header {
+  display: none;
+}
+
 /* Header centralizado e simétrico na página de projeto */
 .pagina-projeto header .container {
   flex-direction: column;
@@ -28,7 +33,7 @@
 }
 
 .projeto-detalhe {
-  padding: 120px 0 80px;
+  padding: 280px 0 80px; /* padding-top para o header fixo não sobrepor o conteúdo */
   min-height: 100vh;
 }
 
@@ -36,16 +41,52 @@
   max-width: 1400px;
 }
 
-.projeto-header {
-  margin-bottom: 40px;
+/* Header fixo com sombreado igual ao header do site */
+.projeto-detalhe .projeto-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 10px var(--shadow-color);
+  padding: 24px 20px;
+  margin-bottom: 0;
   text-align: center;
+}
+
+/* Margem extra na primeira seção para não sobrepor o header fixo */
+.projeto-detalhe .projeto-secao:first-of-type {
+  padding-top: 80px;
+}
+
+.projeto-header-textos {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.projeto-header .projeto-descricao {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.projeto-header .projeto-descricao-linha {
+  margin-bottom: 10px;
+}
+
+.projeto-header .projeto-descricao-linha:last-child {
+  margin-bottom: 0;
 }
 
 .projeto-detalhe h1 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.8rem;
   color: var(--dark-text-color);
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .projeto-subtitulo {
@@ -68,7 +109,7 @@
 }
 
 .projeto-descricao {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   line-height: 1.8;
   color: var(--text-color);
   margin-bottom: 48px;
@@ -320,7 +361,7 @@
 
 .projeto-secao h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: var(--dark-text-color);
   margin-bottom: 24px;
   text-align: center;
@@ -333,7 +374,7 @@
 }
 
 .projeto-secao p {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   line-height: 1.8;
   color: var(--text-color);
   margin-bottom: 16px;

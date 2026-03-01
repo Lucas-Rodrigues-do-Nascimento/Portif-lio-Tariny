@@ -25,85 +25,6 @@
   margin-left: 0;
 }
 
-@media (max-width: 768px) {
-  .pagina-projeto header .container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  /* Header fixo mais compacto em tablets e mobile */
-  .projeto-detalhe {
-    padding-top: 200px;
-  }
-
-  .projeto-detalhe .projeto-header {
-    padding: 16px 16px;
-  }
-
-  .projeto-detalhe h1 {
-    font-size: 2rem;
-    margin-bottom: 8px;
-  }
-
-  .projeto-header .projeto-descricao {
-    font-size: 1.1rem;
-    line-height: 1.5;
-  }
-
-  .projeto-header .projeto-descricao-linha {
-    margin-bottom: 8px;
-  }
-
-  .projeto-detalhe .projeto-secao:first-of-type {
-    padding-top: 48px;
-  }
-
-  .projeto-subtitulo {
-    font-size: 1.5rem;
-  }
-
-  .projeto-resumo,
-  .projeto-local {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .projeto-detalhe {
-    padding-top: 180px;
-  }
-
-  .projeto-detalhe .projeto-header {
-    padding: 12px 14px;
-  }
-
-  .projeto-detalhe h1 {
-    font-size: 1.6rem;
-    margin-bottom: 6px;
-  }
-
-  .projeto-header .projeto-descricao {
-    font-size: 1rem;
-  }
-
-  .projeto-header .projeto-descricao-linha {
-    margin-bottom: 6px;
-  }
-
-  .projeto-detalhe .projeto-secao:first-of-type {
-    padding-top: 36px;
-  }
-
-  .projeto-subtitulo {
-    font-size: 1.3rem;
-  }
-
-  .projeto-resumo,
-  .projeto-local {
-    font-size: 1.1rem;
-  }
-}
-
 .projeto-detalhe {
   padding: 280px 0 80px; /* padding-top para o header fixo não sobrepor o conteúdo */
   min-height: 100vh;
@@ -481,4 +402,57 @@
 
 .projeto-voltar .btn {
   font-size: 1.35rem;
+}
+
+/* ========== RESPONSIVO MOBILE - media queries no final para sobrescrever estilos base ========== */
+@media (max-width: 768px) {
+  .pagina-projeto header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Header fixo compacto em tablets e mobile - só título, sem descrições */
+  .projeto-detalhe {
+    padding-top: 80px !important;
+  }
+
+  .projeto-detalhe .projeto-header {
+    padding: 10px 14px !important;
+  }
+
+  .projeto-detalhe .projeto-header .projeto-header-textos,
+  .projeto-detalhe .projeto-header .projeto-subtitulo,
+  .projeto-detalhe .projeto-header .projeto-resumo,
+  .projeto-detalhe .projeto-header .projeto-descricao,
+  .projeto-detalhe .projeto-header .projeto-local {
+    display: none !important;
+  }
+
+  .projeto-detalhe h1 {
+    font-size: 1.35rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .projeto-detalhe .projeto-secao:first-of-type {
+    padding-top: 32px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Header ainda mais compacto em smartphones */
+  .projeto-detalhe {
+    padding-top: 64px !important;
+  }
+
+  .projeto-detalhe .projeto-header {
+    padding: 8px 12px !important;
+  }
+
+  .projeto-detalhe h1 {
+    font-size: 1.15rem !important;
+  }
+
+  .projeto-detalhe .projeto-secao:first-of-type {
+    padding-top: 24px !important;
+  }
 }

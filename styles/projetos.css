@@ -66,6 +66,14 @@
     margin-bottom: 8px;
 }
 
+#projetos .project-card .project-location {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin: 0 0 12px 0;
+    opacity: 1;
+}
+
 #projetos .project-card p {
     font-size: 1.1rem;
     line-height: 1.6;

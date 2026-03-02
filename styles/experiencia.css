@@ -2,7 +2,7 @@
 
 #experiencia .experiencia-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 40px;
   align-items: stretch;
@@ -20,6 +20,7 @@
 }
 
 #experiencia .experiencia-card:hover {
+  transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(248, 180, 217, 0.3);
 }
 
@@ -34,9 +35,18 @@
 #experiencia .experiencia-empresa {
   font-size: 1.2rem;
   color: var(--dark-text-color);
-  font-weight: 500;
+  font-weight: 600;
+  margin-bottom: 8px;
+  opacity: 1;
+}
+
+#experiencia .experiencia-periodo {
+  display: block;
+  font-size: 1.15rem;
+  color: var(--accent-color);
+  font-weight: 600;
   margin-bottom: 24px;
-  opacity: 0.95;
+  opacity: 1;
 }
 
 #experiencia .experiencia-list {

@@ -95,6 +95,7 @@
         height: 200px;
     }
 
+    #experiencia .experiencia-grid,
     #formacao .grid-container,
     #projetos .grid-container {
         grid-template-columns: 1fr;

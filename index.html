@@ -55,9 +55,10 @@
           <ul>
             <li><a href="#home">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#atuacao">Atuação Técnica</a></li>
-            <li><a href="#habilidades">Habilidades Técnicas</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
@@ -88,7 +89,10 @@
             orçamentos e acompanhamento técnico de obras residenciais e
             multifamiliares.
           </p>
-          <a href="#projetos" class="btn">Ver Projetos</a>
+          <div class="hero-buttons">
+            <a href="#projetos" class="btn">Ver Projetos</a>
+            <a href="assets/curriculo.pdf" download class="btn btn-outline" aria-label="Baixar currículo em PDF">Baixar currículo</a>
+          </div>
         </div>
       </section>
       <!-- Comentário: Fim da seção Hero -->
@@ -231,6 +235,41 @@
       </section>
       <!-- Comentário: Fim da seção Formação e Especializações -->
 
+      <!-- Comentário: Seção Experiência -->
+      <section id="experiencia">
+        <div class="container">
+          <h2 class="section-title">Experiência</h2>
+          <div class="experiencia-grid">
+            <div class="experiencia-card">
+              <h3 class="experiencia-cargo">Arquiteta | Gestão e Acompanhamento de Obras</h3>
+              <p class="experiencia-empresa">Casa Prime Incorporadora & Construtora</p>
+              <ul class="experiencia-list">
+                <li>Gestão e acompanhamento técnico de obras residenciais multifamiliares</li>
+                <li>Controle de prazos, medições e suporte à execução em campo</li>
+                <li>Levantamentos quantitativos e apoio ao planejamento de obra</li>
+                <li>Gestão de suprimentos, cotações e interface com fornecedores</li>
+                <li>Controle financeiro de pedidos e acompanhamento de processos de compras</li>
+                <li>Utilização do sistema Sienge para solicitações, pedidos, recebimentos e controle de notas fiscais</li>
+                <li>Desenvolvimento de As Built e compatibilização e desenvolvimento de projetos complementares</li>
+                <li>Solução de interferências técnicas entre projeto e execução</li>
+              </ul>
+            </div>
+            <div class="experiencia-card">
+              <h3 class="experiencia-cargo">Arquiteta</h3>
+              <p class="experiencia-empresa">Studio Conte Arquitetura</p>
+              <ul class="experiencia-list">
+                <li>Desenvolvimento de projetos arquitetônicos residenciais e comerciais</li>
+                <li>Elaboração de projetos executivos e detalhamento técnico para obra</li>
+                <li>Modelagem tridimensional e estudos volumétricos</li>
+                <li>Levantamentos técnicos e acompanhamento de execução em obra</li>
+                <li>Elaboração de orçamentos e apoio técnico ao cliente</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Comentário: Fim da seção Experiência -->
+
       <!-- Comentário: Seção Projetos -->
       <section id="projetos">
         <div class="container">
@@ -260,22 +299,22 @@
                 <span class="project-link-label">Ver projeto completo →</span>
               </div>
             </a>
-            <!-- Habitação Social -->
+            <!-- Detalhamentos Técnicos -->
             <a
-              href="projeto-habitacao-social.html"
+              href="projeto-detalhamentos-tecnicos.html"
               target="_blank"
               rel="noopener noreferrer"
               class="project-card project-card-link"
             >
               <img
-                src="assets/images/Habita%C3%A7%C3%A3o%20Social/TARY9.bmp"
-                alt="Habitação Social - Capa do projeto"
+                src="assets/images/Detalhamentos/Detalhamento%20cozinha/CASA_DETALHAMENTO_COZINHA_page-0001.jpg"
+                alt="Detalhamentos Técnicos - Cozinha"
               />
               <div class="project-info">
-                <h3>Habitação Social</h3>
+                <h3>Detalhamentos Técnicos</h3>
                 <p>
-                  Projeto arquitetônico de habitação social com plantas, cortes,
-                  fachadas e maquete eletrônica. Tipologias de 2 e 3 quartos.
+                  Projetos executivos e detalhamentos técnicos: cozinha, área de
+                  lazer, churrasqueiras, hobby box e instalações hidráulicas.
                 </p>
                 <span class="project-link-label">Ver projeto completo →</span>
               </div>
@@ -302,7 +341,27 @@
                 <span class="project-link-label">Ver projeto completo →</span>
               </div>
             </a>
-            <!-- Lar para Idosos -->
+            <!-- Habitação de Interesse Social -->
+            <a
+              href="projeto-habitacao-social.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-card project-card-link"
+            >
+              <img
+                src="assets/images/Habita%C3%A7%C3%A3o%20Social/TARY9.bmp"
+                alt="Habitação de Interesse Social - Capa do projeto"
+              />
+              <div class="project-info">
+                <h3>Habitação de Interesse Social</h3>
+                <p>
+                  Projeto arquitetônico de habitação social com plantas, cortes,
+                  fachadas e maquete eletrônica. Tipologias de 2 e 3 quartos.
+                </p>
+                <span class="project-link-label">Ver projeto completo →</span>
+              </div>
+            </a>
+            <!-- TFG — Lar para Idosos -->
             <a
               href="projeto-lar-para-idosos.html"
               target="_blank"
@@ -311,34 +370,14 @@
             >
               <img
                 src="assets/images/Lar%20para%20Idosos/C%C3%B3pia%20de%20TFG%201.jpg"
-                alt="Lar para Idosos - ILPI - Capa do projeto"
+                alt="TFG Lar para Idosos - Capa do projeto"
               />
               <div class="project-info">
-                <h3>Lar para Idosos — ILPI</h3>
+                <h3>TFG — Lar para Idosos</h3>
                 <p>
                   Projeto arquitetônico institucional de Instituição de Longa
                   Permanência para Idosos. Trabalho Final de Graduação com foco
                   em acolhimento, acessibilidade e humanização dos espaços.
-                </p>
-                <span class="project-link-label">Ver projeto completo →</span>
-              </div>
-            </a>
-            <!-- Detalhamentos Técnicos -->
-            <a
-              href="projeto-detalhamentos-tecnicos.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-card project-card-link"
-            >
-              <img
-                src="assets/images/Detalhamentos/Detalhamento%20cozinha/CASA_DETALHAMENTO_COZINHA_page-0001.jpg"
-                alt="Detalhamentos Técnicos - Cozinha"
-              />
-              <div class="project-info">
-                <h3>Detalhamentos Técnicos</h3>
-                <p>
-                  Projetos executivos e detalhamentos técnicos: cozinha, área de
-                  lazer, churrasqueiras, hobby box e instalações hidráulicas.
                 </p>
                 <span class="project-link-label">Ver projeto completo →</span>
               </div>
@@ -698,6 +737,14 @@
         </div>
       </section>
       <!-- Comentário: Fim da seção Contato -->
+
+      <!-- Currículo para download -->
+      <section class="curriculo-download">
+        <div class="container">
+          <p class="curriculo-download-texto">Para mais informações sobre experiência profissional, formação e atuação técnica, acesse meu currículo completo.</p>
+          <a href="assets/curriculo.pdf" download class="btn btn-curriculo" aria-label="Baixar currículo em PDF">Baixar currículo (PDF)</a>
+        </div>
+      </section>
     </main>
     <!-- Comentário: Fim do conteúdo principal -->
 

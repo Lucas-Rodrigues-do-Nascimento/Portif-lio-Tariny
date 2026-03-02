@@ -131,3 +131,19 @@ a:hover {
     color: var(--hover-link-color);
     /* Cor no hover */
 }
+
+/* Seção de download do currículo */
+.curriculo-download {
+    padding: 48px 0;
+    text-align: center;
+    background-color: var(--bg-dark);
+}
+
+.curriculo-download-texto {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 24px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
